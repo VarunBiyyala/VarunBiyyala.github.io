@@ -115,12 +115,31 @@
   </style>
 </head>
 <body>
+    <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#about">Varun Biyyala</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   <!-- Hero Section -->
   <div class="hero text-center position-relative mb-5">
     <div class="hero-shape"></div>
     <img src="photo.png" class="profile-img shadow" alt="Varun Biyyala">
     <h1 class="hero-title mb-1">Varun Biyyala</h1>
-    <div class="hero-sub mb-2">Full Stack AI Engineer | Researcher | Educator</div>
+    <div class="hero-sub mb-2">AI Engineer | Researcher | Educator</div>
     <div class="mb-3">
       <span class="badge bg-success text-dark">Available for Collaboration</span>
     </div>
@@ -137,23 +156,45 @@
   <div class="container pb-4">
     <!-- About Section -->
     <section id="about">
-      <h2 class="section-title"><i class="bi bi-person-lines-fill"></i> About Me</h2>
-      <div class="card card-custom p-4">
-        <p class="lead mb-1">
-          Hi! I'm Varun, an AI Engineer, educator, and researcher focused on scalable agentic AI solutions, cloud-native deployments, and deep learning interpretability.
+    <h2 class="section-title"><i class="bi bi-person-lines-fill"></i> About Me</h2>
+    <div class="card card-custom p-4">
+        <p class="mb-2" style="font-size: 1.15rem;">
+        💻 <b>Software Engineer</b> &rarr; 🌱 <b>Organic Farmer</b> &rarr; 🚀 <b>Entrepreneur</b> &rarr; 🎓 <b>AI Master's Student</b> &rarr; <b>AI Engineer in the US!</b>
+        <br>
+        <span class="text-secondary">A wonderful journey that equipped me with the essential knowledge and tools to become an expert in AI.</span>
         </p>
         <p>
-          At Kanchi Technologies 2i LLC, I build next-gen RAG chatbots and teach at Yeshiva University. Open to collaborations—let’s connect!
+        Having recently entered the US market, with <b>4+ years in Machine Learning</b> and <b>2 exciting years in LLMs and Generative AI</b>, I'm eager to dive deeper into the AI world.
         </p>
-      </div>
+        <p>
+        <b>Currently:</b> Developing a scalable <b>RAG chatbot</b> with FastAPI, Streamlit, Azure GPT-4, Azure AI Search <i class="bi bi-search"></i>, Azure Blob Storage, AKS ☁️, and Azure Functions embracing <b>LLMOps</b>!
+        </p>
+        <p>
+        <b>Previously:</b> Led the Basura Team at Basura, Inc. full-stack dev with a smart Agentic RAG chatbot (LangChain, LangGraph, Pinecone, FastAPI) and deep learning-based content moderation <i class="bi bi-shield-check"></i>.
+        </p>
+        <p>
+        <b>Research:</b> Published novel evaluation metrics for Video-Editing AI at IEEE/CVF WACV 2025, leveraging VLMs, DINO, and LLM agents.
+        <br>
+        <a href="https://arxiv.org/abs/2501.07554" target="_blank">[See Paper]</a>
+        </p>
+        <p>
+        My current focus is building scalable tools for model probing and retraining in deep learning (<b>JAX, Dynamax, Penzai</b>), and collaborating with a NASA-affiliated mathematician on LPPLS model calibration for financial bubble detection—accepted at SIAM Financial Math & Engineering 2025 🎯.
+        </p>
+        <p>
+        Life's an exciting journey - I'm embracing it fully and can't wait for what's next! 😄🚀
+        <br>
+        <b>Interested to collaborate or discuss new ideas?</b> Email me at <a href="mailto:varun.guna6@gmail.com">varun.guna6@gmail.com</a> 📩
+        </p>
+    </div>
     </section>
+
 
     <!-- Timeline Experience Section -->
     <section id="experience">
       <h2 class="section-title"><i class="bi bi-briefcase-fill"></i> Experience</h2>
       <div class="timeline">
         <div class="timeline-item">
-          <div><span class="timeline-icon"><i class="bi bi-robot"></i></span> <strong>Full Stack AI Engineer</strong>, Kanchi Technologies 2i LLC <span class="text-muted">(Jan 2025 - Present)</span></div>
+          <div><span class="timeline-icon"><i class="bi bi-robot"></i></span> <strong>AI Engineer</strong>, Kanchi Technologies 2i LLC <span class="text-muted">(Jan 2025 - Present)</span></div>
           <div>Building Agentic RAG AI chatbots (FastAPI, Streamlit, Azure AI Foundry), cloud-native Azure architecture, LLMOps best practices.</div>
         </div>
         <div class="timeline-item">
@@ -183,8 +224,8 @@
           <div class="card card-custom p-3 h-100">
             <h5 class="mb-1"><i class="bi bi-camera-video-fill"></i> Video-Editing AI Evaluation</h5>
             <span class="badge bg-primary mb-2">WACV 2025</span>
-            <p>Designed novel metrics combining VLM semantics, DINO-based object conformation, and LLM agent evaluation.<br>
-              <a href="#">Paper Link</a></p>
+            <p>Designed novel evaluation metrics combining VLM semantics, DINO-based object conformation, and an LLM agent.<a href="https://arxiv.org/abs/2501.07554" target="_blank">[arXiv]</a><br>
+            </p>
           </div>
         </div>
         <div class="col-md-4">
@@ -198,7 +239,7 @@
           <div class="card card-custom p-3 h-100">
             <h5 class="mb-1"><i class="bi bi-heart-pulse-fill"></i> VetMedGPT</h5>
             <span class="badge bg-success mb-2">AI for Healthcare</span>
-            <p>Transformer model for veterinary diagnosis; 1M+ Q&A pairs, 6×H100 GPU cluster. <a href="https://arxiv.org/abs/2501.07554" target="_blank">[arXiv]</a></p>
+            <p>Contributed to VetMedGPT, a transformer model, curated 500GB dataset | 1M+ Q&A pairs, trained on a 8×A100 GPU cluster.</p>
           </div>
         </div>
       </div>
@@ -235,7 +276,7 @@
           <span class="badge rounded-pill bg-info text-dark mb-1">Advanced Data Science (III-T, Bangalore)</span>
           <span class="badge rounded-pill bg-info text-dark mb-1">Tableau</span>
           <h6 class="mt-3 mb-2">Awards</h6>
-          <span class="badge rounded-pill bg-warning text-dark mb-1">SGC Fellowship Award ($1500)</span>
+          <span class="badge rounded-pill bg-warning text-dark mb-1">SGC Fellowship Award</span>
           <span class="badge rounded-pill bg-warning text-dark mb-1">Performance Award, Basura, Inc.</span>
         </div>
       </div>
@@ -244,11 +285,12 @@
     <!-- Education Section -->
     <section id="education">
       <h2 class="section-title"><i class="bi bi-book-half"></i> Education</h2>
-      <div class="card card-custom p-3 mb-2">
+      <div class="card card-custom p-4">
         <strong>Masters in Artificial Intelligence</strong>
-        <span class="edu-badge">Yeshiva University</span> <br>
+        <span class="edu-badge">Yeshiva University, Aug 2023 - Dec 2024</span> <br>
+        <p><strong>Courses:</strong> Artificial Intelligence, Neural Networks and Deep Learning, NLP, Reinforcement Learning, Numerical Methods</p>
         <span class="text-muted">Aug 2023 - Dec 2024</span>
-      </div>
+        </div>
       <div class="card card-custom p-3">
         <strong>Bachelors in Electronics & Communication Engg.</strong>
         <span class="edu-badge">Dr.M.G.R University</span> <br>
