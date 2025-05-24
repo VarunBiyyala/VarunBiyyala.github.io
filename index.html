@@ -9,49 +9,47 @@
   <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <style>
-    body { background: #f8fafc; color: #232b2b; }
+    body { background: #f6f8fa; color: #252c34; }
     .hero {
-      background: linear-gradient(120deg, #2663e7 70%, #53c2f1 100%);
-      color: #fff;
+      background: linear-gradient(120deg, #1e293b 70%, #5eead4 100%);
+      color: #f1f5f9;
       padding: 70px 0 40px 0;
       position: relative;
       overflow: hidden;
     }
     .hero-shape {
-      position: absolute; width: 350px; height: 350px;
-      background: rgba(255,255,255,0.10);
+      position: absolute; width: 340px; height: 340px;
+      background: rgba(94,234,212,0.11);
       border-radius: 50%; z-index: 0; top: -80px; right: -100px;
       filter: blur(2px);
     }
     .profile-img {
-      width: 140px; height: 140px; object-fit: cover;
-      border-radius: 50%; border: 5px solid #fff; box-shadow: 0 0 18px #326ab4;
-      margin-bottom: 18px;
-      background: #fff;
-      z-index: 2;
-      position: relative;
+      width: 135px; height: 135px; object-fit: cover;
+      border-radius: 50%; border: 5px solid #fff; box-shadow: 0 0 16px #475569;
+      margin-bottom: 18px; background: #fff;
+      z-index: 2; position: relative;
     }
-    .hero-title { font-size: 2.8rem; font-weight: 700; }
-    .hero-sub { font-size: 1.4rem; font-weight: 300; margin-bottom: 8px; }
+    .hero-title { font-size: 2.5rem; font-weight: 700; }
+    .hero-sub { font-size: 1.2rem; font-weight: 300; margin-bottom: 8px; }
     .social-links a {
-      color: #fff; margin: 0 10px; font-size: 1.3rem;
-      transition: color 0.2s;
+      color: #f1f5f9; margin: 0 10px; font-size: 1.2rem;
+      transition: color 0.18s;
     }
-    .social-links a:hover { color: #ffe483; }
+    .social-links a:hover { color: #5eead4; }
     .section-title {
-      font-size: 2rem;
+      font-size: 1.75rem;
       font-weight: 700;
-      color: #2663e7;
-      margin-bottom: 28px;
-      letter-spacing: 0.5px;
+      color: #1e293b;
+      margin-bottom: 24px;
+      letter-spacing: 0.2px;
     }
     .timeline {
-      border-left: 3px solid #2663e7;
+      border-left: 3px solid #5eead4;
       padding-left: 30px;
       margin-left: 15px;
     }
     .timeline-item {
-      margin-bottom: 35px;
+      margin-bottom: 30px;
       position: relative;
     }
     .timeline-item:before {
@@ -59,51 +57,60 @@
       position: absolute;
       left: -36px;
       top: 0;
-      width: 22px; height: 22px;
-      background: #fff;
-      border: 3px solid #2663e7;
+      width: 20px; height: 20px;
+      background: #f6f8fa;
+      border: 3px solid #5eead4;
       border-radius: 50%;
       z-index: 2;
     }
     .timeline-icon {
-      font-size: 1.2rem;
-      background: #2663e7;
-      color: #fff;
+      font-size: 1.08rem;
+      background: #5eead4;
+      color: #334155;
       border-radius: 50%;
       padding: 4px 8px;
       margin-right: 10px;
       vertical-align: middle;
     }
     .card-custom {
-      border-radius: 18px;
-      box-shadow: 0 2px 16px rgba(80,115,221,0.06);
+      border-radius: 16px;
+      box-shadow: 0 2px 14px rgba(30,41,59,0.07);
       border: 0;
+      background: #fff;
     }
-    .list-inline-item:not(:last-child) { margin-right: 14px; }
     .skill-badge {
-      background: #e0ebfa;
-      color: #2663e7;
-      border-radius: 14px;
-      padding: 7px 16px;
+      background: #e0f2fe;
+      color: #134e4a;
+      border-radius: 13px;
+      padding: 7px 14px;
       font-size: 1rem;
-      margin: 4px 6px 4px 0;
+      margin: 4px 5px 4px 0;
       display: inline-block;
       font-weight: 500;
     }
     .edu-badge {
-      background: #c7f5e9;
-      color: #198754;
-      border-radius: 12px;
+      background: #d1fae5;
+      color: #047857;
+      border-radius: 11px;
       padding: 4px 10px;
-      font-size: 0.93rem;
+      font-size: 0.92rem;
       margin-left: 8px;
       vertical-align: middle;
       font-weight: 500;
     }
+    .badge.bg-primary, .badge.bg-info, .badge.bg-success, .badge.bg-warning {
+      background-color: #5eead4!important;
+      color: #134e4a!important;
+      font-weight: 500;
+    }
+    .card .badge {
+      margin-bottom: 5px;
+    }
+    section { margin-bottom: 2.5rem; }
     @media (max-width: 600px) {
-      .hero-title { font-size: 1.7rem; }
-      .section-title { font-size: 1.3rem; }
-      .profile-img { width: 80px; height: 80px; }
+      .hero-title { font-size: 1.5rem; }
+      .section-title { font-size: 1.1rem; }
+      .profile-img { width: 78px; height: 78px; }
     }
   </style>
 </head>
@@ -115,7 +122,7 @@
     <h1 class="hero-title mb-1">Varun Biyyala</h1>
     <div class="hero-sub mb-2">Full Stack AI Engineer | Researcher | Educator</div>
     <div class="mb-3">
-      <span class="badge bg-warning text-dark">Available for Collaboration</span>
+      <span class="badge bg-success text-dark">Available for Collaboration</span>
     </div>
     <div class="social-links mb-2">
       <a href="mailto:varun.guna6@gmail.com" title="Email"><i class="bi bi-envelope-fill"></i></a>
@@ -129,20 +136,20 @@
 
   <div class="container pb-4">
     <!-- About Section -->
-    <section class="mb-5" id="about">
+    <section id="about">
       <h2 class="section-title"><i class="bi bi-person-lines-fill"></i> About Me</h2>
       <div class="card card-custom p-4">
         <p class="lead mb-1">
-          Hi! I'm Varun, a passionate AI Engineer, educator, and researcher specializing in scalable agentic AI solutions, cloud-native deployments, and deep learning interpretability.
+          Hi! I'm Varun, an AI Engineer, educator, and researcher focused on scalable agentic AI solutions, cloud-native deployments, and deep learning interpretability.
         </p>
         <p>
-          Currently, I work at Kanchi Technologies 2i LLC building next-gen RAG chatbots and also teach at Yeshiva University. I'm open to collaborations and always excited about new AI projects!
+          At Kanchi Technologies 2i LLC, I build next-gen RAG chatbots and teach at Yeshiva University. Open to collaborations—let’s connect!
         </p>
       </div>
     </section>
 
     <!-- Timeline Experience Section -->
-    <section class="mb-5" id="experience">
+    <section id="experience">
       <h2 class="section-title"><i class="bi bi-briefcase-fill"></i> Experience</h2>
       <div class="timeline">
         <div class="timeline-item">
@@ -169,7 +176,7 @@
     </section>
 
     <!-- Projects Section -->
-    <section class="mb-5" id="projects">
+    <section id="projects">
       <h2 class="section-title"><i class="bi bi-layers-fill"></i> Projects & Research</h2>
       <div class="row g-3">
         <div class="col-md-4">
@@ -198,7 +205,7 @@
     </section>
 
     <!-- Skills & Awards Section -->
-    <section class="mb-5" id="skills">
+    <section id="skills">
       <h2 class="section-title"><i class="bi bi-award-fill"></i> Skills & Awards</h2>
       <div class="row">
         <div class="col-md-7">
@@ -235,7 +242,7 @@
     </section>
 
     <!-- Education Section -->
-    <section id="education" class="mb-5">
+    <section id="education">
       <h2 class="section-title"><i class="bi bi-book-half"></i> Education</h2>
       <div class="card card-custom p-3 mb-2">
         <strong>Masters in Artificial Intelligence</strong>
@@ -269,7 +276,7 @@
     </section>
   </div>
 
-  <footer class="text-center py-4 mt-5 text-muted" style="background: #e9eef7;">
+  <footer class="text-center py-4 mt-5 text-muted" style="background: #e6f3ef;">
     &copy; 2024 Varun Biyyala &mdash; Powered by Bootstrap 5
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
